@@ -1,0 +1,28 @@
+Assume f(n) is measured in microseconds.
+What is the largest n you can solve for in time t?
+t = 1hr = 10e6/s * 60s/m * 60m/h = 3.6e9micro-s
+
+lo2n=3.6e9 ---> n = 2^3.6e9
+sqrt(n) = 3.6e9 ---> n = (3.6e9)^2 = 12.96e18 = 1.296e19
+nlogn = 3.6e9 ---> n = 133378058 (BST method)
+
+------------------------------------------------------------
+lim     t(n)/g(n)  =  {0=> t(n) as a smaller order of growth}
+n->inf                {C=> t(n) same order of groeth}
+                      {inf=> t(n) larger order of growth}
+
+Sterlings Approximation
+n! ~ sqrt(2*pi*n)*(n/e)^n
+
+Ex. 1 Compare .5n(n-1) and n^2 Ans: the same
+lim=>inf .5n(n-1)/n^2  =  .5 lim n^2-n/n^2  =  .5 lim (1-1/n) = 1/2
+
+Ex. 2 Compare log2n and sqrt(n)  Ans: log2n smaller
+lim=>inf log2n/sqrt(n)  =  lim 1/nln(2)/1/2sqrt(n)  =  2ln(2) lim sqrt(n)/n  =  1/sqrt(n)  =  0
+l
+Ex. 3 Compare n! and 2^n  Ans: n! larger
+lim=>inf n!/2^n  =  lim (sqrt(2*pi*n)*(n/e)^n)/2^n  =  lim sqrt(2*pi*n)*(n^n/2^ne^n)  = lim ()n^n = inf
+
+Theorum: If t1(n) member O(g1(n)) and t2(n) member O(g2(n)) then,
+t1(n) + t2(n) member O(max{g1(n), g2(n)})
+AKA: lower order terms drop out

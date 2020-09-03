@@ -1,0 +1,17 @@
+- A tree is a directed acyclic graph.
+- A Binary Tree is a tree where each non-null node has two potentially null children.
+- A BST is a binary tree where the left child is less then the parent and the right node is larger then the parent.
+
+Height: of tree number of edges on the path from the root to the deepest leaf
+-> Height of a null tree is -1
+-> Height of 1 node tree is  0
+
+Width: of the tree is the number of nodes on the level with the most nodes.
+
+Diameter: is the number of edges on the longest path between any two nodes.
+
+Traversals -
+ 1. Preorder: Root -> Left -> Right
+ 2. Inorder: Left -> Root -> Right
+ 3. Postorder: Left -> Right -> Root
+

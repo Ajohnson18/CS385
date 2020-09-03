@@ -1,0 +1,13 @@
+An algorith is a squence of unambigious instructons for 
+solvinng problems.
+Ex. for obtaining a required output for a legitamate input 
+in a finite amount of time.
+
+1. The unambiguity requirement for each step of an algorith
+cannot be compromised.
+2. The range of inputs of which an algorithm works has to be
+specified carefully.
+3. The same algorithm can be represented in several different
+ways.
+4. There may exist several algorithms for solving the same
+problem.

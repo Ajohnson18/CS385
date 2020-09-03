@@ -1,0 +1,26 @@
+The number of black nodes on any simple path from, but not including, a node 
+down to a leaf is called the blackheight of the node.
+
+Lemma: A redblack tree with n internal nodes has a height of
+most 2lg(n+1).
+
+Proof: induction on the height of x
+Base Case: 
+	height = 0 => x is a leaf
+	2^bh(x) - 1 = 2^0 - 1 = 0
+Inductive Hypothesis: Assume it works for any node x of positive
+	height, this is x has atleast 2^bh(x) - 1 internal nodes.
+Inductive Step: Internal node x with 2 children
+		Height of the (child of x) < x =>
+			each child has atleast 2^bh(x)-1 - 1
+			internal nodes.
+		Thus, the subtree rooted at x contains atleast
+		(2^bh(x)-1 - 1) + (2^bh(x)-1 - 1) + 1
+		= 2 * 2^bh(x)-1 - 1 = 2^bh(x) - 1
+		Let H be the height of the tree.
+		By property 4, at least half the nodes from the root
+		to a leaf, not including the root, must be black.
+
+
+Assignment: 
+	
